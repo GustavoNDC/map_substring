@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const txtInput = document.getElementById('txtInput');
     const fullTxtDiv = document.getElementById('fullTxt');
     const substringResultadoDiv = document.getElementById('substringResultado');
-// Alterando tbm
+    // Alterando tbm
     txtInput.addEventListener('input', () => {
         if (txtInput.value.trim() !== '') {
             fullTxtDiv.textContent = txtInput.value;
@@ -21,13 +21,9 @@ function aplicarSubstring() {
     const start = parseInt(document.getElementById('start').value);
     const end = parseInt(document.getElementById('end').value);
     const txt = document.getElementById('fullTxt').textContent;
-//Confirmando se o valor n é numero, n da pra multiplicar por x ;-;
-    if (!isNaN(start) && !isNaN(end)) {
-        const substring = txt.substring(start, end);
-        document.getElementById('substringResultado').textContent = substring;
-    } else {
-        alert('Por favor, insira números válidos.');
-    }
+    const substring = txt.substring(start, end);
+    document.getElementById('substringResultado').textContent = substring;
+
 }
 
 //map
