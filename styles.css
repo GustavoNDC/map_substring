@@ -1,18 +1,117 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
-input {
-    margin: 5px;
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
 }
-#Title, #substringResult {
-    margin-top: 20px;
+
+h1 {
+    color: #333;
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
-#substringResultado {
-    color: blue;
+
+.highlight {
+    color: #555;
+    font-size: 20px;
+    margin: 20px 0;
 }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inline-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    color: #333;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-value {
+    font-size: 18px;
+    color: #333;
+}
+
+.code-block {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.keyword { color: #569cd6; }
+.string { color: #d69d85; }
+.number { color: #b5cea8; }
+.function { color: #dcdcaa; }
+.function-name { color: #4ec9b0; }
+.parameter { color: #9cdcfe; }
