@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Substring e Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Substring -->
+    <div class="container">
+      <h1>Substring</h1>
+      <div id="fullTxt" class="highlight">Hello World</div>
+      <div class="input-group">
+        <div class="inline-inputs">
+          <input
+            type="text"
+            id="start"
+            placeholder="Digite o primeiro número"
+            class="input-field"
+          />
+          <input
+            type="text"
+            id="end"
+            placeholder="Digite o segundo número"
+            class="input-field"
+          />
+        </div>
+        <input
+          type="text"
+          id="txtInput"
+          placeholder="Digite uma frase"
+          class="input-field"
+        />
+      </div>
+      <button onclick="aplicarSubstring()" class="btn">
+        Aplicar Substring
+      </button>
+      <div id="substringResultado" class="resultado"></div>
+      <button class="btn" onclick="toggleCode('codeBlockSubstring')">
+        Mostrar Código Substring
+      </button>
+      <!-- Substring -->
+
+      <!-- ChatGPT 100% -->
+      <pre id="codeBlockSubstring" class="code-block" style="display: none">
+<code>
+<span class="keyword">function</span> <span class="function-name">aplicarSubstring</span>() {
+    <span class="keyword">const</span> start = <span class="function">parseInt</span>(document.getElementById(<span class="string">'start'</span>).value);
+    <span class="keyword">const</span> end = <span class="function">parseInt</span>(document.getElementById(<span class="string">'end'</span>).value);
+    <span class="keyword">const</span> txt = document.getElementById(<span class="string">'fullTxt'</span>).textContent;
+
+    <span class="keyword">if</span> (!<span class="function">isNaN</span>(start) && !<span class="function">isNaN</span>(end)) {
+        <span class="keyword">const</span> substring = txt.<span class="function">substring</span>(start, end);
+        document.getElementById(<span class="string">'substringResultado'</span>).textContent = substring;
+    } <span class="keyword">else</span> {
+        <span class="function">alert</span>(<span class="string">'Por favor, insira números válidos.'</span>);
+    }
+}
+</code>
+</pre>
+      <!-- ChatGPT 100% -->
+
+      <!-- Map -->
+      <h1>Map</h1>
+      <div id="Array" class="highlight">
+        Array Original = [1, 2, 4, 8, 16, 32, 64]
+      </div>
+      <div class="slider-container">
+        <input
+          type="range"
+          id="slider"
+          min="1"
+          max="10"
+          value="1"
+          oninput="mostrarValor()"
+          class="slider"
+        />
+        <span id="valorSlider" class="slider-value">1</span>
+      </div>
+      <button onclick="multiplicarArray()" class="btn">
+        Multiplicar Array
+      </button>
+      <div id="novoArray" class="resultado"></div>
+
+      <button class="btn" onclick="toggleCode('codeBlockMap')">
+        Mostrar Código Map
+      </button>
+
+      <!-- Map -->
+
+      <!-- ChatGPT 100% -->
+      <pre id="codeBlockMap" class="code-block" style="display: none">
+<code>
+<span class="keyword">const</span> novoArray = arrayOriginal.<span class="function">map</span>(<span class="parameter">numero</span> => <span class="parameter">numero</span> * multiplicador);
+</code>
+</pre>
+      <!-- ChatGPT 100% -->
+
+      <!-- Div que fecha o Container -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

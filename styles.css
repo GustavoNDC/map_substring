@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+input {
+    margin: 5px;
+}
+#Title, #substringResult {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#substringResultado {
+    color: blue;
+}
