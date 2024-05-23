@@ -4,14 +4,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #2a2828;
     margin: 0;
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #403e3e;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     padding: 20px;
     max-width: 600px;
     width: 100%;
@@ -19,13 +19,13 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 .highlight {
-    color: #555;
+    color: #ffffff;
     font-size: 20px;
     margin: 20px 0;
 }
@@ -45,8 +45,8 @@ h1 {
 
 .input-field {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #8d7979;
+    border-radius: 10px;
     font-size: 16px;
     flex: 1;
 }
@@ -56,11 +56,11 @@ h1 {
 }
 
 .btn {
-    background-color: #4CAF50;
+    background-color: #7263a7;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
@@ -90,12 +90,12 @@ h1 {
 
 .slider-value {
     font-size: 18px;
-    color: #333;
+    color: #ffffff;
 }
 
 .code-block {
     background-color: #1e1e1e;
-    color: #dcdcdc;
+    color: #ffffff;
     padding: 10px;
     border-radius: 4px;
     margin-top: 10px;
@@ -109,9 +109,26 @@ code {
     line-height: 1.5;
 }
 
-.keyword { color: #569cd6; }
-.string { color: #d69d85; }
-.number { color: #b5cea8; }
-.function { color: #dcdcaa; }
-.function-name { color: #4ec9b0; }
-.parameter { color: #9cdcfe; }
+.keyword {
+    color: #569cd6;
+}
+
+.string {
+    color: #d69d85;
+}
+
+.number {
+    color: #b5cea8;
+}
+
+.function {
+    color: #dcdcaa;
+}
+
+.function-name {
+    color: #4ec9b0;
+}
+
+.parameter {
+    color: #9cdcfe;
+}
